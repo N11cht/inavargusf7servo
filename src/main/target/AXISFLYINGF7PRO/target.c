@@ -30,13 +30,12 @@ timerHardware_t timerHardware[] = {
     DEF_TIM(TIM4, CH1, PB6,  TIM_USE_OUTPUT_AUTO, 0, 0),  // S5
     DEF_TIM(TIM4, CH2, PB7,  TIM_USE_OUTPUT_AUTO, 0, 0),  // S6
     
-    // T3 Pad (UART3 TX) - İsteğe bağlı Servo veya Motor
+    // T3 ve R3 pinleri (Orijinal yapı korundu, Configurator'dan servo olarak atanabilir)
     DEF_TIM(TIM2, CH3, PB10, TIM_USE_OUTPUT_AUTO, 0, 0),  
-    // R3 Pad (UART3 RX) - İsteğe bağlı Servo veya Motor
     DEF_TIM(TIM2, CH4, PB11, TIM_USE_OUTPUT_AUTO, 0, 1),  
 
-    // LED Pad - Sadece Servo Çıkışı
-    DEF_TIM(TIM1, CH1, PA8,  TIM_USE_SERVO, 0, 0),  
+    // LED Pad - Standart çıkışa çevrildi, Configurator'dan servo atanabilir
+    DEF_TIM(TIM1, CH1, PA8,  TIM_USE_OUTPUT_AUTO, 0, 0),  
     
     // DEF_TIM(TIM9, CH2, PA3,   TIM_USE_PPM, 0, 0),  // PPM
     DEF_TIM(TIM12, CH2, PB15, TIM_USE_ANY, 0, 0),  // CAM CONTROL

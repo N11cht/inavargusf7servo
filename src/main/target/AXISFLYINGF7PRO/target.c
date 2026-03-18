@@ -40,6 +40,8 @@ timerHardware_t timerHardware[] = {
     
     // DEF_TIM(TIM9, CH2, PA3,   TIM_USE_PPM, 0, 0),  // PPM
     DEF_TIM(TIM12, CH2, PB15, TIM_USE_ANY, 0, 0),  // CAM CONTROL
+
+// derleme tetikleme
 };
 
 const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware[0]);
